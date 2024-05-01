@@ -11,8 +11,8 @@
       apt:
         update_cache: yes
 
-          #    - name: Reboot
-          #reboot:
+    # - name: Reboot
+    #   reboot:
 
     - name: Disable SWAP
       shell: |
@@ -143,8 +143,8 @@
         name: net.ipv4.ip_forward
         value: 1
 
-          #- name: Reboot
-          #reboot:
+    # - name: Reboot
+    #   reboot:
 
 - hosts: master
   become: yes
